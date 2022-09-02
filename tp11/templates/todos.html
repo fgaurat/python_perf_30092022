@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Todos</h1>
+    <table>
+        {% for todo in todos %}
+        <tr>
+            <td>{{todo.id}}</td>
+            <td>{{todo.title}}</td>
+            <td>{{todo.completed}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
